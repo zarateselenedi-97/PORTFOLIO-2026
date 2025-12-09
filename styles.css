@@ -1,0 +1,63 @@
+/* Fuente minimalista estilo Lasse */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* GALERÍA */
+.gallery {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.item h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* ANIMACIONES */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
